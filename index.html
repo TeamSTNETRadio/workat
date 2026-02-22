@@ -66,6 +66,7 @@
             <ul>
                 <li><a href="#" style="color: var(--red); font-weight: 700;">Home</a></li>
                 <li><a href="https://email.stnetradio.com">Email</a></li>
+                <li><a href="/email">Dispatch</a></li>
                 <li><a href="https://calendar.stnetradio.com">Calendar</a></li>
                 <li><a href="https://drive.stnetradio.com">Drive</a></li>
                 <li><a href="https://messages.stnetradio.com">Messages</a></li>
@@ -87,7 +88,7 @@
 
     <div class="dashboard-container">
 
-        <!-- 1. Quick Access (4 Cols) -->
+        <!-- 1. Quick Access (5 Cols) -->
         <section class="dashboard-section" data-animate>
             <div class="section-header">
                 <h2>Quick Access</h2>
@@ -104,12 +105,17 @@
                     <span class="tool-name">Email</span>
                     <span class="tool-desc">Inbox & Drafts</span>
                 </a>
-                <a href="http://drive.stnetradio.com" class="tool-card" target="_blank" data-animate data-delay="3">
+                <a href="/email" class="tool-card" data-animate data-delay="3">
+                    <i class="tool-icon fa-solid fa-paper-plane"></i>
+                    <span class="tool-name">Dispatch</span>
+                    <span class="tool-desc">Send Emails</span>
+                </a>
+                <a href="http://drive.stnetradio.com" class="tool-card" target="_blank" data-animate data-delay="4">
                     <i class="tool-icon fa-brands fa-google-drive"></i>
                     <span class="tool-name">Drive</span>
                     <span class="tool-desc">Files & Storage</span>
                 </a>
-                <a href="http://messages.stnetradio.com" class="tool-card" target="_blank" data-animate data-delay="4">
+                <a href="http://messages.stnetradio.com" class="tool-card" target="_blank" data-animate data-delay="5">
                     <i class="tool-icon fa-solid fa-message"></i>
                     <span class="tool-name">Messages</span>
                     <span class="tool-desc">Chat & Team</span>
@@ -128,6 +134,12 @@
                         <div class="status-row">
                             <div class="status-name">
                                 <i class="fa-brands fa-google" style="width: 20px;"></i> Email
+                            </div>
+                            <span class="status-indicator st-operational">Operational</span>
+                        </div>
+                        <div class="status-row">
+                            <div class="status-name">
+                                <i class="fa-solid fa-paper-plane" style="width: 20px;"></i> Dispatch
                             </div>
                             <span class="status-indicator st-operational">Operational</span>
                         </div>
@@ -204,16 +216,25 @@
             <div class="news-grid">
 
                 <div class="news-card" data-animate data-delay="1">
-                    <span class="news-badge">Tips</span>
-                    <h4>Chrome Integration</h4>
-                    <p>Use STNET ID on Google Chrome for seamless login across all our apps including VPN and RSS.</p>
+                    <span class="news-badge">New</span>
+                    <h4>Email Dispatch</h4>
+                    <p>Our official Email Dispatch system is now live. Access templates and send official communications
+                        directly from our portal.</p>
                     <div class="news-meta">
-                        <a href="https://support.google.com/chrome" class="link" target="_blank">Read Guide</a> • Nov
-                        28
+                        <a href="/email" class="link">Open App</a> • Feb 22
                     </div>
                 </div>
 
                 <div class="news-card" data-animate data-delay="2">
+                    <span class="news-badge">Tips</span>
+                    <h4>Chrome Integration</h4>
+                    <p>Use STNET ID on Google Chrome for seamless login across all our apps including VPN and RSS.</p>
+                    <div class="news-meta">
+                        <a href="https://support.google.com/chrome" class="link" target="_blank">Read Guide</a> • Nov 28
+                    </div>
+                </div>
+
+                <div class="news-card" data-animate data-delay="3">
                     <span class="news-badge">Important</span>
                     <h4>Cloudflare Outage</h4>
                     <p>Services including ID and VPN are temporarily unavailable due to upstream provider issues.</p>
@@ -222,7 +243,7 @@
                     </div>
                 </div>
 
-                <div class="news-card" data-animate data-delay="3">
+                <div class="news-card" data-animate data-delay="4">
                     <span class="news-badge">Update</span>
                     <h4>Google Workspace</h4>
                     <p>STNET Email has moved to Gmail. Please check the new login instructions for access.</p>
